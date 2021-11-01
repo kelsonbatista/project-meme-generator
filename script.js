@@ -17,3 +17,21 @@ const theImage = document.querySelector('#meme-image');
 inputFile.addEventListener('change', () => {
   theImage.src = URL.createObjectURL(inputFile.files[0]);
 });
+
+// change style
+const btnFire = document.querySelector('#fire');
+const btnWater = document.querySelector('#water');
+const btnEarth = document.querySelector('#earth');
+const memeContainer = document.querySelector('#meme-image-container');
+
+btnFire.addEventListener('click', () => {
+  if (theImage) memeContainer.style.border = '3px dashed red';
+});
+
+btnWater.addEventListener('click', () => {
+  if (theImage) memeContainer.style.border = '5px double blue';
+});
+
+btnEarth.addEventListener('click', () => {
+  if (theImage) memeContainer.style.border = '6px groove green';
+});
