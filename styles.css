@@ -1,8 +1,12 @@
+main {
+  margin-bottom: 200px;
+}
+
 .wrapper {
   width: 100%;
 }
 
-.top__content , .gen__content , .styles__content , .done__content {
+.top__content , .gen__content , .styles__content , .suggestions__content {
   width: 600px;
   margin: auto;
 }
@@ -49,10 +53,34 @@
   overflow-wrap: break-word;
   color: white;
   z-index: 10;
+  text-align: center;
+}
+
+.styles__title , .suggestions__title {
+  width: 600px;
+  display: block;
+  position: absolute;
+  margin: 0;
 }
 
 .styles__content {
-  margin-top: 440px;
+  margin-top: 410px;
+  display: flex;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.suggestions__content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.styles__buttons , .suggestions__models {
+  margin-top: 60px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;

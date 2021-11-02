@@ -35,3 +35,11 @@ btnWater.addEventListener('click', () => {
 btnEarth.addEventListener('click', () => {
   if (theImage) memeContainer.style.border = '6px groove green';
 });
+
+for (let i = 1; i <= 4; i += 1) {
+  const imgClick = document.querySelector(`#meme-${i}`);
+  console.log(`meme-${i}`);
+  imgClick.addEventListener('click', () => {
+    theImage.src = imgClick.src;
+  });
+}
